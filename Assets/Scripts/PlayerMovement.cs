@@ -15,7 +15,7 @@ public class PlayerMovement : MonoBehaviour
     {
 
         m_Animator = GetComponent<Animator>();
-        m_Rigidbody = GetComponent<m_Rigidbody>();
+        m_Rigidbody = GetComponent<Rigidbody>();
 
     }
 
