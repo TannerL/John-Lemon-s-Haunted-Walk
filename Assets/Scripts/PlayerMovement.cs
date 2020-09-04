@@ -13,7 +13,7 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
 
-        m_Animator = GetComponent<m_Animator>();
+        m_Animator = GetComponent<Animator>();
 
     }
 
