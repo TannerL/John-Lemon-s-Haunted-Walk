@@ -20,7 +20,7 @@ public class PlayerMovement : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
 
         float horizontal = Input.GetAxis("Horizontal");
@@ -44,6 +44,8 @@ public class PlayerMovement : MonoBehaviour
     {
 
         m_Rigidbody.MovePosition(m_Rigidbody.position + m_Movement * m_Animator.deltaPosition.magnitude);
+        m_Rigidbody.MoveRotation(m_Rotation);
+
 
     }
 }
